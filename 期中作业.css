@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .w {
+    width: 1068px;
+    margin: auto;
+  }
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  .clearfix {
+    *zoom: 1;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* 设置页眉的样式 */
+    /*动画*/
+    @keyframes header {
+      from {background-color: #6b98b6;}
+      to {background-color: #c7dae9;}
+    }
+    
+  .header {
+    background-color: #c7dae9;
+    padding: 20px;
+    text-align: center;
+    animation-name: header;
+    animation-duration: 4s;
+  }
+  #content {
+      height: 1000px;
+      width: 100%;
+      position: relative;
+      padding: 0;
+      background-color: #c7dae9;
+  }
+  .bgdiv {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      min-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+  }
+
+  @keyframes bg {
+    from {background-color: #6b98b6;}
+    to {background-color: #c7dae9;}
+  }
+
+  .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      animation-name: bg;
+      animation-duration: 4s;
+  }
+  .bg img {
+      position: absolute;
+      width: 1068px;
+      left: 178px;
+  }
+  .contentdiv {
+      position: relative;
+      width: 1068px;
+      height: 100%;
+      margin: auto;
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #b5c9db;
+    }
+
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: #000;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a.active {
+      background-color: #6b98b6;
+      color: white;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: rgb(211, 228, 247);
+      color: white;
+    }
+
+    .column1 {
+      float: left;
+      width: 30%;
+      padding: 15px;
+      margin: 20px;
+      margin-top: 710px;
+      background-color: #6b98b6;
+      border-radius: 30px;
+      box-shadow: 2px 2px 4px #504a4cb4;
+    }
+    .column2 {
+      float: left;
+      width: 63%;
+      padding: 15px;
+      margin-left: 20px;
+      margin-top: 710px;
+      background-color: #6b98b6;
+      border-radius: 30px;
+      box-shadow: 2px 2px 4px  #504a4eb4;
+    }
+    
+    /* 清除列之后的浮动 */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* 响应式布局 - 创建堆叠而非并排的三列 */
+    @media screen and (max-width:600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    .footer {
+      width: 1000px;
+      height: 115px;
+      margin: auto;
+      margin-top: 40px;
+      position: relative;
+  }
+  
+  .copyright {
+      font-size: 11px;
+      margin: auto;
+      height: 33px;
+      text-align: center;
+  }
+  .copyright>span {
+      color: #959595;
+  }
+
+h1 {margin: 30px;
+    text-shadow: 
+      0 0 10px #fff, 
+    0 0 20px #fff, 
+    0 0 30px #fff, 
+    0 0 40px #6AB5FF, 
+    0 0 70px #6AB5FF, 
+    0 0 80px #6AB5FF, 
+    0 0 100px #6AB5FF, 
+    0 0 150px #6AB5FF;
+  }
